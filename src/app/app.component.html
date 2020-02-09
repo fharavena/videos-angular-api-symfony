@@ -1,6 +1,6 @@
 <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-3">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+    <a class="navbar-brand" [routerLink]="['/inicio']">
       <img
         src="/assets/images/video.png"
         width="30"
@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"
+          <a class="nav-link" [routerLink]="['/inicio']"
             >Home <span class="sr-only">(current)</span></a
           >
         </li>
@@ -39,10 +39,10 @@
 
       <ul class="navbar-nav navbar-right">
         <li class="nav-item">
-          <a href="" class="nav-link">Login</a>
+          <a class="nav-link" [routerLink]="['/login']">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Registro</a>
+          <a class="nav-link" [routerLink]="['/registro']">Registro</a>
         </li>
       </ul>
 
@@ -69,4 +69,5 @@
       </ul>
     </div>
   </nav>
+  <router-outlet></router-outlet>
 </div>
