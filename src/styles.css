@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+.card-header > h4 {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
